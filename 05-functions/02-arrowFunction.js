@@ -31,6 +31,7 @@ let arrow = (x) => console.log(x);
 arrow(10);
 
 //!CONCISE VS BLOCK BODY
+
 //CONCISE BODY
 /* when we have a simple return, or response, from our arrow
 function,it makes sense write in a concise,simplified way.
@@ -52,7 +53,7 @@ console.log(conciseBody(1,2));   // same result with the above
 //console.log(result); 
 
 let slightlyComplexConcise = (x,y) => x > 2 && y < 2 ? 
-console.log(`${x} is greater than 2 and & {y} is less than 2`):
+console.log(`${x} is greater than 2 and ${y} is less than 2`):
 console.log(`${x} and ${y} are where we want them`)
 
 slightlyComplexConcise(3,1);
@@ -64,15 +65,14 @@ slightlyComplexConcise(2,1);
 - sometimes it will sense to use block body if we need to do multiple lines of code
 */
 
-let blokArrow = (x,y) => {
+let blockArrow = (x,y) => {
     console.log(`${x} and ${y} are in a block body arrow function`)
     //return `${x} and ${y} are in a block body arrow function`
     //ANY code below the return statement in a function will be ignored.
     //if we write code below it, it will no run
     //console.log();
 }
-
-console.log(blokArrow(1,2));
+(blokArrow(1,2));
 
 let blockResponseReturn = blockArrow(1,2); // variable will hold the value of the return string
 let blockResponseLog = blockArrow(1,2); // variable will be undefined
@@ -89,7 +89,7 @@ function shot(x,y){
 }
 */
 
-let hero = 'Robin Hood'
+let hero = 'Robin Hood';
 let nock = 1;
 
 let shot = (x, y) => y < 3 ? console.log(`${x} only shot ${y} arrow...`) : console.log(`${x}
@@ -120,6 +120,7 @@ let shoot = (x, y) => {
 }
 
 shoot(hero, nock);
+
 
 
 

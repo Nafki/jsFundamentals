@@ -1,14 +1,15 @@
 /*
 
 FUNCTIONS
-Function are process the call upon to run an action.they can do the following
-- take in an inpur to process,modify,or response to (not required)
+Functions are process the call upon to run an action.they can do the following
+- take in an input to process,modify,or response to (not required)
 - return avalue
 - can be invoked(or called as aften as needed)
 */
 
 // (1)      (2)
 function  hi(){
+     //3
     console.log('Hi!');
 }
 //1: key word - we use this to define a function
@@ -16,13 +17,14 @@ function  hi(){
 //3:code goes here will be "brain" of the function"
 
 
-//calling the function
-//in order to innvoke9call0 a function, we will simply write
+//CALLING THE FUNCTION
+//in order to innvoke(call) a function, we will simply write
 //it's name and put it's parenthesis after it
 hi();
-
-//when we console.log js will first evaluate the func, meaning it will run all of the code and look
+console.log(hi());
+//when we console.log a function js will first evaluate the function, meaning it will run all of the code and look
 //for a value from it. if we donot have return statement within the function,we will get back undefined.
+
 
 let myName = 'Jerome';
 function myNameCap() {
@@ -38,10 +40,10 @@ hi();
 // console.log(myName);
 // THE COMPUTER gets to look at this
 //myName
-myNameCap();
-console.log(myName);
+//myNameCap();
+//console.log(myName);
 //console.log(`This is working ${myName}`);
-myNameCap();
+//myNameCap();
 
 // bellow are the above code with out notes 
 function  hi(){
@@ -104,39 +106,39 @@ let anon = function() {  //common use would be to assign these to variable
 }
 anon();
 
-//example of writting anon func. below
-//true || false ?
- //function( {console.log('true')} :)
- //function( {console.log('false')} :)
-//fetch('something')
-  //  . then(function(response{response.jason)})
+/*example of writting anon func. below
+    fetch('something')
+    . then(function(response{response.json)})
 
-/*
-PARAMETERS
+    true || false ?
+    function( {console.log('true')} :)
+    function( {console.log('false')} :)
+*/
+
+// PARAMETERS
 
 //we will be using functions to pass information and return a result
 //parameters will allow our functions to take in ourside information
 
-*/
-
 function parameterFunc(num) {
     console.log(num + 1);
-    return num + 5;  //
+    return num + 5;  //return set the function = to something.
 }
-
 console.log(parameterFunc(7));
+
+//parameter (7)
 //parameterFunc('bruce');
 //parameterFunc('another test');
 //parameterFunc([1,2,3,4,5]);
 
 let returnTest = 5;
-parameterFunc(returnTest) //6
+parameterFunc(returnTest); //6
 console.log(parameterFunc(returnTest)) // 10
 
 let myReturn = parameterFunc(returnTest) //or let myReturn = parameterFunc(15 or your value number)
 console.log('return:',myReturn)
 
-//let myReturn = parameterFunc(15, 27) //js ignore 27 because it is not in ()
+let myReturn = parameterFunc(15, 27) //js ignore 27 because it is not in ()
 console.log('return:',myReturn)
 
 let firstName = 'Jane';

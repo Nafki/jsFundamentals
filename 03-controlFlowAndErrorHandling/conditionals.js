@@ -1,7 +1,7 @@
 /* 
 CONDITIONALS
-FASLY VALUES:
-AVALUE THAT IS CONSIDER FALSE WHEN encountered in a boolean. There are 6 falsy values in js
+FALSY VALUES:
+A falsy value is a value that is considered false when encountered in a boolean. There are 6 falsy values in js
 - false
 - 0
 - "", '', ``
@@ -19,28 +19,23 @@ example: true,{},[],42(any non-empty string),"false",3.14(any decimal)
 /* 
 IF STATEMENTS
 
-WHEN WE USE COMPARISON OPERATORS, WE TYPICALLY ARE ASKING IF WE CAN MOVE TO THE NEXT section of code.
+when we use comparison operators,we typically are asking if we can move to the next section of code.
 "if" some thing is true,do 'this things"
 */
 
 let light ='on';
 
-    //keyword    expression
-    if           (true){
-   // code to rune if the expression evaluates to true
-    console.log('truthy Test');
-    }
- //condition
-    if(false){
-        console.log('falsy Test');
-    }
-// result non
+//keyword    expression
+if           (true){
+// code to rune if the expression evaluates to true
+console.log('truthy Test');
+}
+//condition
+if(false){
+console.log('falsy Test');  // result non
+}
 
- //== comparison 
-
-let light = 'on';
-
-if(light == 'on'){
+if(light == 'on'){  // == comparison 
 console.log('the light is on');
 }
 
@@ -50,8 +45,9 @@ if( weather < 70 && rain == true){
     console.log('Maybe wear a jacket');
 }
 
-//we used == to comparison not assign values
+//we used == to comparison not to assign values
 
+//CHALLENGE- creat an if statement that returns true and console 'Batman'
 let batman = 'is the night';
 let bruce = true;
 if(batman =='is the night' && bruce == true){ 
@@ -89,9 +85,9 @@ but also one is it ends up being false
 let today = 75;
 if(today < 70){
     //           string interpolation
-    console.log(`lt's ${today}, wear a jacket!`);
+console.log(`lt's ${today}, wear a jacket!`);
 }else{
-    console.log(`it's ${today}. No jacket needed!`);
+console.log(`it's ${today}. No jacket needed!`);
 }
 
 /* 
@@ -103,7 +99,7 @@ this is a condition that will be checked if the above condition was not met
 let cooktime = 40;
 if(cooktime === 45){
     console.log('Let us feast');
-} else if(cooktime >= 30){
+}else if(cooktime >= 30){
     console.log(`It has only been ${cooktime} minutes. Wait another 5-15 minutes.`);
 }else if(cooktime >= 20){
     console.log(`It has only been ${cooktime} minutes. Wait another 10 - 25 minutes.`);
@@ -118,21 +114,17 @@ if(cooktime === 45){
     console.log(`It has only been ${cooktime} minutes. Wait another 5-15 minutes.`);
 }else if(cooktime >= 20){
     console.log(`It has only been ${cooktime} minutes. Wait another 10 - 25 minutes.`);
-}else{
+}else{    //we should put else if before else. 
     console.log(`It has only been ${cooktime} minutes. Perhaps we could at least try cooking it..`);
 }
 
-let cooktime = 25;
-if(cooktime === 45){
-    console.log('Let us feast');
-} else if(cooktime >= 30){
-    console.log(`It has only been ${cooktime} minutes. Wait another 5-15 minutes.`);
-}else if(cooktime >= 20){
-    console.log(`It has only been ${cooktime} minutes. Wait another 10 - 25 minutes.`);
-}else{ //we should put else if before else. 
-    console.log(`It has only been ${cooktime} minutes. Perhaps we could at least try cooking it..`);
-}
-
+/*Challenge- set avriable of age give it a number of your choice,
+create an else if statement that checks
+If age 17 console.log 'sorry you are too young to do any thing'
+if age is atleast 18, 'you can vote'
+if 21,'you can drink
+if at least 25, 
+*/
 let age = 18;
 if(age <= 17){
     console.log('sorry, you are too young to do any thing');
@@ -186,7 +178,7 @@ let hero = 'Batman';
 let villain = 'Freeze';
 
 hero=='Batman' && villain =='Riddler' ? 
-console.log('what hashead and a tail but no body') : 
+console.log('what has a head and a tail but no body?') : 
 hero == 'Batman' && villain == 'Joker' ?
 console.log('why so serious?') : 
 hero == 'Batman' && villain == 'Mr.Freeze' ? 
@@ -211,7 +203,7 @@ lampOn != true && daytime == true ?
 /*
 SWITCH STATEMENTS
 
-EXECUTES A BLOCK OF code depending on different cases
+Switch statement executes a block code depending on different cases
 */
 
 let instructor ='Jerome';
@@ -264,3 +256,16 @@ switch(typeof switchConditinal == 'string' || typeof switchConditional == 'boole
 
 // when we use || (or) only one side of the || needs to be true for expression to be true
 // when we use && (and) both sides of the && need to be true for expression to be true
+
+//! Challenge 2: Take Home Challenge
+/*  
+Create a switch statement that takes in a value (number) that represents a grade.  If it is True, console log that they are passing with the correct letter grade.
+*   A: 89-100
+*   B: 79-88
+*   C: 66-78
+*   D: 59-65
+*   F: 0-59
+*/
+
+
+

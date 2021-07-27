@@ -1,7 +1,8 @@
 
 //LOOPS
 /*
-Loops allow us to go over a block of information or code in a determined amount of cycles. It's important to note that it is possible for us to write code without declaring an endpoint.
+Loops allow us to go over a block of information or code in a determined amount of cycles. 
+It's important to note that it is possible for us to write code without declaring an endpoint.
 Loops help us repeat a process without writing alot of code.
 */
 /*
@@ -21,7 +22,9 @@ for( let i = 0; i <= 10; 1++){
 }
 /*
 We state our loop with a "for". Within this function, we are injecting some parameters that JS will run against. index; condition, change index -> result.
-Within parameters, we are stating our index declaration to 0. This is our baseline. We move on to asking if that variable is less than or equal to the number 10, take that set number and add 1 to it. Once that is processed, return that value (in this case "console.log" of that number). Once our condition is met, we return a FALSE which ends our loop. 
+Within parameters, we are stating our index declaration to 0.This is our baseline. 
+We move on to asking if that variable is less than or equal to the number 10, take that set number and add 1 to it. Once that is processed, 
+return that value (in this case "console.log" of that number). Once our condition is met, we return a FALSE which ends our loop. 
 THIS is important to note:
 for(<create an index variable>; <run condition>; <change index>) {
     <return results>
@@ -29,6 +32,7 @@ for(<create an index variable>; <run condition>; <change index>) {
 }
 */
 //? If don't indicate what our condition is, the loop will not have a finish line and thus run until we have to force close it.
+
 //INFINITE LOOP!
 /*
 for(let i = 0; i++){
@@ -36,6 +40,7 @@ for(let i = 0; i++){
 }
 */
 //No condition means that JS doesn't know when to stop and will never assume that information.
+
 //! CHALLENGE:
 //* Using a for loop, set an index to 2.  Make a condition where if that number is greater than -10, change that index by subtracting 4 and console log each iteration.*/
 //RESULT
